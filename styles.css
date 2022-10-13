@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 *::selection {
     color: var(--secondary);
-    background-color: var(--primary);
+    /* background-color: rgba(180, 0, 0, 0.7); */
 }
+
 
 :root {
     --bg: black;
