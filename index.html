@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a88ea16824.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
     <title>Shailesh Paliwal</title>
 </head>
+
 <body>
-    
+
     <div id="header">
         <div class="container">
             <nav>
@@ -28,7 +31,7 @@
         </div>
     </div>
 
-<!-- -------ABOUT------------ -->
+    <!-- -------ABOUT------------ -->
 
     <div id="about">
         <div class="container">
@@ -38,7 +41,9 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus, autem repudiandae sequi vel sit iusto rem facilis vitae reprehenderit porro numquam ex earum ipsa itaque voluptates quod temporibus. Dolorem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus, autem repudiandae sequi
+                        vel sit iusto rem facilis vitae reprehenderit porro numquam ex earum ipsa itaque voluptates quod
+                        temporibus. Dolorem.</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -73,16 +78,60 @@
     </div>
 
 
+    <!-- Services ---------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque animi dignissimos magni in!
+                        Velit, suscipit enim eaque debitis similique excepturi sunt nihil deleniti? Cupiditate ut alias
+                        est unde! Doloremque?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque animi dignissimos magni in!
+                        Velit, suscipit enim eaque debitis similique excepturi sunt nihil deleniti? Cupiditate ut alias
+                        est unde! Doloremque?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque animi dignissimos magni in!
+                        Velit, suscipit enim eaque debitis similique excepturi sunt nihil deleniti? Cupiditate ut alias
+                        est unde! Doloremque?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Portfolio ----------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+        </div>
+    </div>
+
+
 
     <script>
         var tablinks = document.getElementsByClassName('tab-links');
         var tabcontents = document.getElementsByClassName('tab-contents');
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link")
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab")
             }
 
@@ -93,4 +142,5 @@
 
 
 </body>
+
 </html>
