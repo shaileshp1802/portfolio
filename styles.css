@@ -21,6 +21,8 @@
     --scrollbar-size: 0.6rem;
     --scrollbar-thumb: var(--secondary);
     --scrollbar-track: rgba(56, 56, 56, 0.5);
+    --cursor: url('./images/cursor.svg'), auto;
+    --cursor-pointer: url('./images/cursor-pointer.svg'), auto;
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +58,7 @@
 body {
     background-color: var(--bg);
     color: var(--primary);
-    /* cursor: none ; */
+    cursor: var(--cursor);
 }
 
 #header {
@@ -133,7 +135,7 @@ span {
     color: var(--secondary);
 }
 
-/* ABOUT----------------- */
+/* ABOUT----------------------------------------------------------------- */
 
 #about {
     padding: 80px 0;
@@ -175,7 +177,7 @@ span {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
     position: relative;
 }
 
@@ -208,7 +210,7 @@ span {
 }
 
 
-/* Services----------------------- */
+/* Services----------------------------------------------------------------------------- */
 
 #services {
     padding: 30px 0;
@@ -255,7 +257,7 @@ span {
     transform: translateY(-10px);
 }
 
-/* portfolio ------------------ */
+/* portfolio ------------------------------------------------------------------- */
 
 #portfolio {
     padding: 50px 0;
@@ -346,7 +348,7 @@ span {
     color: var(--bg);
 }
 
-/* contact -------------- */
+/* contact ---------------------------------------------------------- */
 
 .contact-left {
     flex-basis: 35%;
@@ -410,7 +412,7 @@ form .btn-2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
 }
 
 
@@ -422,6 +424,43 @@ form .btn-2 {
     /* color: var(--secondary); */
 }
 
+#msg {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+
+/* BACK TO TOP BUTTON --------------------------------------------- */
+
+.to-top {
+    outline: 0.1rem solid var(--secondary);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.to-top a {
+    color: var(--primary);
+}
+
+a {
+    cursor: var(--cursor-pointer);
+}
 
 
 /* SMALL SCREEN ---------------------------------------------------------- */
@@ -469,6 +508,18 @@ nav .fa-solid {
 
     .about-col-2 {
         margin-top: 30px;
+    }
+
+    /* .row {
+        justify-content: center;
+    } */
+
+    .contact-icon {
+        display: none;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
     }
 
     /* nav .fa-solid {
