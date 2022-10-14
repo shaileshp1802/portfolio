@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+/* font-family: 'Sacramento', cursive; */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +12,12 @@
 :root {
     --bg: rgb(21, 21, 21);
     --primary: white;
-    --secondary: #ff004f;
+    --secondary: #00eaff;
     --tert: rgb(38, 38, 38);
     /* --bg: black;
     --primary: white;
-    --secondary: #ff004f; */
+    --secondary: #ff004f; 
+    --tert: rgb(38, 38, 38); */
     --scrollbar-size: 0.6rem;
     --scrollbar-thumb: var(--secondary);
     --scrollbar-track: rgba(56, 56, 56, 0.5);
@@ -58,13 +62,13 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(./images/background.png);
+    background-image: url(./images/background.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 0px 10%;
 }
 
 nav {
@@ -72,10 +76,14 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    backdrop-filter: blur(5px);
+
 }
 
-.logo {
-    width: 140px;
+.logo, .logo span {
+    font-size: 2.5rem;
+    font-family: 'Sacramento', cursive;
+    user-select: none;
 }
 
 nav ul li {
@@ -116,6 +124,10 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
+/* .header-text h1 span {
+    font-family: 'Sacramento', cursive;
+} */
+
 span {
     color: var(--secondary);
 }
@@ -138,7 +150,8 @@ span {
 }
 
 .about-col-1 img {
-    width: 100%;
+    /* width: 100%; */
+    height: 60%;
     border-radius: 15px;
 }
 
@@ -270,7 +283,7 @@ span {
 
 .layer {
     width: 100%;
-    height: 0%;
+    height: 1%;
     background: linear-gradient(rgba(0,0,0,0.6), var(--secondary));
     border-radius: 10px;
     position: absolute;
@@ -325,6 +338,7 @@ span {
     color: var(--primary);
     transition: 0.3s;
 }
+
 
 .btn:hover {
     background: var(--secondary);
