@@ -14,6 +14,24 @@ function opentab(tabname) {
 }
 
 
+var sidemenu = document.getElementById('sidemenu');
+
+var window_width = window.innerWidth;
+
+console.log(window_width);
+
+function openmenu() {
+    sidemenu.style.right = '0';
+    sidemenu.style.display = 'flex';
+    sidemenu.style.flexDirection = 'column';
+}
+
+function closemenu() {
+    sidemenu.style.right = '-300px';
+    // sidemenu.style.display = 'none';
+}
+
+
 // const cursor = document.querySelector(".cursor");
 
 // document.addEventListener('mousemove', customCursor);

@@ -17,13 +17,15 @@
             <nav>
                 <!-- <img src="./images/logo.png" alt="logo" class="logo"> -->
                 <p class="logo"><span>S</span>hailesh</p>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <!-- <p>UI/UX Designer</p> -->
@@ -38,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="./images/user.svg" alt="">
+                    <img src="./images/user.svg" alt="" id="desktop">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -87,7 +89,7 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
+                    <h2>Web Dev</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque animi dignissimos magni in!
                         Velit, suscipit enim eaque debitis similique excepturi sunt nihil deleniti? Cupiditate ut alias
                         est unde! Doloremque?</p>
