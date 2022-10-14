@@ -6,23 +6,53 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --bg: rgb(21, 21, 21);
+    --primary: white;
+    --secondary: #ff004f;
+    --tert: rgb(38, 38, 38);
+    /* --bg: black;
+    --primary: white;
+    --secondary: #ff004f; */
+    --scrollbar-size: 0.6rem;
+    --scrollbar-thumb: var(--secondary);
+    --scrollbar-track: rgba(56, 56, 56, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
 *::selection {
     color: var(--secondary);
     /* background-color: rgba(180, 0, 0, 0.7); */
 }
 
-
-:root {
-    --bg: black;
-    --primary: white;
-    --secondary: #ff004f;
+.cursor {
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transform: 200ms ease-out;
 }
-
-
 
 body {
     background-color: var(--bg);
     color: var(--primary);
+    /* cursor: none ; */
 }
 
 #header {
@@ -178,7 +208,7 @@ span {
 }
 
 .services-list div {
-    background: #262626;
+    background: var(--tert);
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -215,4 +245,164 @@ span {
 
 #portfolio {
     padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s ;
+
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--secondary));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.2s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.layer a {
+    margin-top: 20px;
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: var(--primary);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid var(--secondary);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--primary);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary);
+    color: var(--bg);
+}
+
+/* contact -------------- */
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: var(--secondary);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: var(--primary);
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: var(--secondary);
+    transform: translateY(-5px);
+}
+
+.btn.btn-2 {
+    display: inline-block;
+    background: var(--secondary);
+}
+
+.contact-right form {
+    width: 100%;
+
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: var(--tert);
+    padding: 15px;
+    margin: 15px 0;
+    color: var(--primary);
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+form .btn-2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 25px 0;
+    /* color: var(--secondary); */
 }
