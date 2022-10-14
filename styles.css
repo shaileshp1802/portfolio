@@ -474,9 +474,9 @@ nav .fa-solid {
 
 @media only screen and (max-width: 800px) {
 
-    /* #header {
-        background-image: url(./images/phone-background.png);
-    } */
+    #header {
+        background-size: cover;
+    }
 
     .header-text {
         margin-top: 100%;
