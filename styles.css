@@ -22,7 +22,7 @@
     --scrollbar-thumb: var(--secondary);
     --scrollbar-track: rgba(56, 56, 56, 0.5);
     --cursor: url('./images/cursor.svg'), auto;
-    --cursor-pointer: url('./images/cursor-pointer.svg'), auto;
+    --cursor-pointer: url('./images/cursor-pointer.svg'), pointer;
 }
 
 ::-webkit-scrollbar {
@@ -406,6 +406,7 @@ form input, form textarea {
     color: var(--primary);
     border-radius: 6px;
     font-size: 18px;
+    /* outline: 1px solid var(--secondary); */
 }
 
 form .btn-2 {
@@ -474,9 +475,9 @@ nav .fa-solid {
 
 @media only screen and (max-width: 800px) {
 
-    #header {
+    /* #header {
         background-size: cover;
-    }
+    } */
 
     .header-text {
         margin-top: 100%;
