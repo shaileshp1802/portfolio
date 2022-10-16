@@ -21,8 +21,8 @@
     --scrollbar-size: 0.6rem;
     --scrollbar-thumb: var(--secondary);
     --scrollbar-track: rgba(56, 56, 56, 0.5);
-    --cursor: url('./images/cursor.svg'), auto;
-    --cursor-pointer: url('./images/cursor-pointer.svg'), pointer;
+    /* --cursor: url('./images/cursor.svg'), auto; */
+    /* --cursor-pointer: url('./images/cursor-pointer.svg'), pointer; */
 }
 
 ::-webkit-scrollbar {
@@ -44,7 +44,7 @@
     /* background-color: rgba(180, 0, 0, 0.7); */
 }
 
-.cursor {
+/* .cursor {
     position: absolute;
     width: 1.2rem;
     height: 1.2rem;
@@ -53,12 +53,12 @@
     mix-blend-mode: difference;
     transform: translate(-50%, -50%);
     transform: 200ms ease-out;
-}
+} */
 
 body {
     background-color: var(--bg);
     color: var(--primary);
-    cursor: var(--cursor);
+    /* cursor: var(--cursor); */
 }
 
 #header {
@@ -177,7 +177,8 @@ span {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
-    cursor: var(--cursor-pointer);
+    /* cursor: var(--cursor-pointer); */
+    cursor: pointer;
     position: relative;
 }
 
@@ -413,7 +414,8 @@ form .btn-2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
-    cursor: var(--cursor-pointer);
+    /* cursor: var(--cursor-pointer); */
+    cursor: pointer;
 }
 
 
@@ -461,7 +463,8 @@ form .btn-2 {
 }
 
 a {
-    cursor: var(--cursor-pointer);
+    /* cursor: var(--cursor-pointer); */
+    cursor: pointer;
 }
 
 
