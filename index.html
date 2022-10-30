@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/a88ea16824.js" crossorigin="anonymous"></script>
     <script src="./scripts/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <title>Shailesh Paliwal</title>
 </head>
 
@@ -180,6 +181,15 @@
                     <!-- <a onclick="downloadcv()" class="btn btn-2">Download CV</a> -->
                 </div>
                 <div class="contact-right">
+                    <form name="pageclip"action="https://send.pageclip.co/72p86ayDo1FO1cX49LIYDjU8Q8TlqSTe/contact-form" class="pageclip-form" method="post">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="youremail@xyz.com" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2 pageclip-form__submit">Submit</button>
+                        <span id="msg"></i></span>
+                    </form>
+                </div>
+                <!-- <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" id="" placeholder="Your Name" required>
                         <input type="email" name="Email" id="" placeholder="youremail@xyz.com" required>
@@ -187,7 +197,7 @@
                         <button type="submit" class="btn btn-2">Submit</button>
                         <span id="msg"></i></span>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -210,6 +220,7 @@
     <!-- <div class="cursor"></div> -->
 
     <script src="./scripts/index.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
 
 </body>
