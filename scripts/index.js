@@ -32,6 +32,13 @@ form.addEventListener('submit', e => {
         .catch(error => console.log('Error!', error.message))
 })
 
+const pageClipForm = document.forms['pageclip']
+
+form.addEventListener('submit' , e=>{
+    setTimeout(()=>{}, 3000)
+    form.reset()
+})
+
 const toTop = document.querySelector('.to-top');
 
 window.addEventListener('scroll', () => {
