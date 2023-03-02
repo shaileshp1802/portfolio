@@ -14,6 +14,11 @@
 
 <body id="element-to-print">
 
+    <div class="preloader" id="loading">
+        <div class="loader"></div>
+    </div>
+
+
     <div id="header">
         <div class="container">
             <nav>
@@ -134,7 +139,8 @@
                     <div class="layer">
                         <h3>Code Help Clone</h3>
                         <p>It is website clone of <span> thecodehelp.in </span> made using ReactJs and TailwindCSS.</p>
-                        <a href="https://codehelpclone.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://codehelpclone.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -151,7 +157,8 @@
                     <div class="layer">
                         <h3>News Monkey</h3>
                         <p>A ReactJs based website that gives latest news using API calls.</p>
-                        <a href="https://github.com/shaileshp1802/newsmonkey"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/shaileshp1802/newsmonkey"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -160,7 +167,8 @@
                         <h3>Take a Break</h3>
                         <p>It is Python based program that keep track of time and send you alert to Take
                             a Break.</p>
-                        <a href="https://github.com/shaileshp1802/take-a-break"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/shaileshp1802/take-a-break"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -234,6 +242,12 @@
 
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script src="./scripts/index.js"></script>
+    <script>
+        let preloader = document.getElementById('loading');
+        window.addEventListener('load', ()=>{
+            preloader.style.display = 'none';
+        })
+    </script>
 
 
 </body>

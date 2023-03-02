@@ -11,7 +11,7 @@
 }
 
 :root {
-    --bg: rgba(21, 21, 21,1);
+    --bg: rgba(21, 21, 21, 1);
     --primary: white;
     --secondary: #00eaff;
     --tert: rgb(38, 38, 38);
@@ -25,6 +25,41 @@
     /* --cursor: url('./images/cursor.svg'), auto; */
     /* --cursor-pointer: url('./images/cursor-pointer.svg'), pointer; */
 }
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    z-index: 99999;
+}
+
+.loader {
+    border: 16px solid #333333;
+    border-top: 16px solid var(--secondary);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 ::-webkit-scrollbar {
     width: var(--scrollbar-size);
@@ -84,7 +119,8 @@ nav {
 
 }
 
-.logo, .logo span {
+.logo,
+.logo span {
     font-size: 2.5rem;
     font-family: 'Sacramento', cursive;
     user-select: none;
@@ -282,14 +318,14 @@ span {
     width: 100%;
     border-radius: 10px;
     display: block;
-    transition: 0.5s ;
+    transition: 0.5s;
 
 }
 
 .layer {
     width: 100%;
     height: 1%;
-    background: linear-gradient(rgba(0,0,0,0.6), var(--secondary));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--secondary));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -324,7 +360,7 @@ span {
     text-align: center;
 }
 
-.work:hover img{
+.work:hover img {
     transform: scale(1.1);
 }
 
@@ -398,7 +434,8 @@ span {
 
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -420,7 +457,7 @@ form .btn-2 {
 }
 
 
-.copyright{
+.copyright {
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -504,7 +541,8 @@ nav .fa-solid {
         font-size: 40px;
     }
 
-    .about-col-1, .about-col-2 {
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
 
@@ -524,7 +562,8 @@ nav .fa-solid {
         display: none;
     }
 
-    .contact-left, .contact-right {
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
