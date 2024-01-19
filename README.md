@@ -1,3 +1,3 @@
 # Portfolio
 You can access my Portfolio Website using this link:
-https://shaileshp.me/portfolio/
+https://shaileshp1802.github.io/portfolio/
